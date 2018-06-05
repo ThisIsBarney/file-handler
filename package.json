@@ -1,12 +1,14 @@
 {
   "name": "@thisisbarney/file-handler",
-  "version": "1.0.6",
+  "version": "0.0.0-development",
   "description": "easy file handler",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "node_modules/.bin/babel src --out-dir lib",
     "go": "yarn publish --access=public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "file",
@@ -34,6 +36,12 @@
     "file-loader": "^1.1.5",
     "json-loader": "^0.5.7",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "travis-deploy-once": "^5.0.0",
+    "semantic-release": "^15.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThisIsBarney/file-handler.git"
   }
 }
